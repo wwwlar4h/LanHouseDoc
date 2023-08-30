@@ -16,5 +16,37 @@ namespace LanHouse
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Cliente c = new Cliente();
+                c.nome = tx_nome.Text;
+                c.email = tx_email.Text;
+                c.numtele = tx_email.Text;
+                c.datanas = Convert.ToDateTime(maskedTextBox1.Text);
+
+
+
+            }
+
+            catch
+            {
+
+            }
+
+
+        }
+
+        private void tx_nome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
